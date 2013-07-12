@@ -6,8 +6,10 @@ var fs = require("fs");
 
 var fileName = "index.html";
 
+var content = fs.readFileSync(fileName, "utf8");
+
 app.get('/', function(request, response) {
-  response.send('Hello World2-v2!');
+  response.send(content);
 });
 
 var port = process.env.PORT || 5000;
