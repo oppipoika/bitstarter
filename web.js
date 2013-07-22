@@ -8,6 +8,13 @@ var fileName = "index.html";
 
 var content = fs.readFileSync(fileName, "utf8");
 
+app.configure(function () {
+    app.use(
+        "/static", //the URL throught which you want to access to you static content
+        express.static(__dirname + "/static/") //where your static content is located in your filesystem
+    );
+});
+
 app.get('/', function(request, response) {
   response.send(content);
 });
