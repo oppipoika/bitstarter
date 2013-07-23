@@ -14,6 +14,8 @@
 
     <!--<link rel="stylesheet" href="http://ec2-54-218-75-70.us-west-2.compute.amazonaws.com:8080/static/css/bootstrap-responsive.min.css">-->
 
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
 
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
@@ -89,32 +91,25 @@
         color: white;
       }
 
-      /* old stuff, to be removed
-
-      .container {
-        width: 960px;
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
       }
-
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
+      .asset {
+        padding: 2.5% 0%;
       }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
+      .footer {
+        color: #cccccc;
         text-align: center;
       }
-      .video {
-        height: 124px;
-        line-height: 124px;
+      .footer p {
+        font-size: 11px;
       }
-      .thermometer, .order, .social {
-        height: 40px;
-        line-height: 40px;
+      .footer a {
+        color: #ccccff;
       }
-      div.row {
-        border: 1px solid;
-      }
-
-      */
 
     </style>
   </head>
@@ -209,7 +204,7 @@
         </div>
         <div class="span5 copy">
           <p>
-            Text for the marketing.
+            Text for the marketing. Add some length so that also word wrapping takes place on the page.
           </p>
         </div>
       </div>
@@ -225,30 +220,51 @@
         </div>
       </div>
 
-
-
-
-      <div class="row section1">
-        <div class="span12">
-          Marketing Section 1
+      <!-- FAQ -->
+      <!-- Javascript: http://twitter.github.io/bootstrap/javascript.html#collapse -->
+      <div class="row-fluid faq">
+        <div class="span10 offset1">
+          <h3>FAQ</h3>
+          <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseOne">
+                  What does FAQ stand for?
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Frequently Asked Question.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseTwo">
+                  What's a Frequently Asked Question?
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  A question which is commonly asked by users.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="row section2">
-        <div class="span12">
-          Marketing Section 2
-        </div>
-      </div>
+      <!-- Footer -->
 
-      <div class="row faq">
+      <div class="row-fluid footer">
         <div class="span12">
-          FAQ
-        </div>
-      </div>
-
-      <div class="row footer">
-        <div class="span12">
-          Footer
+          <p>This work is licensed under
+            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+              By-SA 3.0
+            </a>, without all the cruft that would otherwise be
+            put at the bottom of the page.</p>
         </div>
       </div>
 
