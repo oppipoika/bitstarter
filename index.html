@@ -33,10 +33,27 @@ css'>
         }
       }
 
+      /* All form factors */
+
+      /* Main body and headings */
+
       body {
-        padding-top: 20px;
-        padding-bottom: 40px;
+        font-family: 'Open sans', Helvetica, Arial, sans-serif;
       }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24 px;
+        line-height: 30 px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
       .container {
         width: 960px;
       }
@@ -90,6 +107,7 @@ css'>
 
 
   <div class="container">
+    <!--
       <div class="row navigation">
         <div class="span2 logo">
           Logo
@@ -101,21 +119,22 @@ css'>
           About
         </div>
       </div>
-      <div class="row heading">
+-->
+      <div class="row-fluid heading">
         <div class="span12">
-          <h1>Bitstarter Title</h1>
+          <h1>Product</h1>
         </div>
       </div>
 
-      <div class="row subheading">
+      <div class="row-fluid subheading">
         <div class="span12">
           <p class="lead">This is my first bitstarter project.</p>
         </div>
       </div>
 
-      <div class="row pitch">
-        <div class="span6 video">
-          Video
+      <div class="row-fluid pitch">
+        <div class="span5 offset1 video">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
         <div class="span6">
           <div class="thermometer">
